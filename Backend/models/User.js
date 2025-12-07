@@ -20,8 +20,44 @@ const userSchema = new mongoose.Schema(
 
     role: {
       type: String,
+      enum: ["admin", "editor", "viewer"],
       default: "editor",
     },
+
+    // ✅ NEW: User preferences
+    emailNotifications: {
+      type: Boolean,
+      default: true,
+    },
+
+    // ✅ NEW: User profile
+    bio: String,
+    avatar: String,
+    website: String,
+
+    // ✅ NEW: Account status
+    isActive: {
+      type: Boolean,
+      default: true,
+    },
+
+    // ✅ NEW: Last login
+    lastLogin: Date,
+
+    // ✅ NEW: Followers/Following
+    followers: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      }
+    ],
+
+    following: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      }
+    ],
   },
   { timestamps: true }
 );
