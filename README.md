@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CodeShare - Real-time Code Snippet Sharing Platform
 
 A modern, collaborative code snippet sharing platform built with React, Node.js, and MongoDB. Share, discover, and collaborate on code snippets in real-time with syntax highlighting, comments, and likes.
@@ -381,3 +382,7 @@ For support, email support@codeshare.com or open an issue on GitHub.
 ---
 
 **Made with ❤️ for developers**
+=======
+# CodeShare-
+ Real-time code snippet sharing platform
+>>>>>>> c65244ed4bef1674729ad4c141debc8b128307aa
